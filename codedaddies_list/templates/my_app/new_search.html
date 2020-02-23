@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!-- Title format the text written in the input -->
-{{<h2 style="text-align: center">{{ search | title }}</h2>
+<h2 style="text-align: center">{{ search | title }}</h2>
 
 <div class="row">
     {% for post in final_postings %}
@@ -20,5 +19,5 @@
         </div>
     </div>
     {% endfor %}
-</div>}}
+</div>
 {% endblock content %}
